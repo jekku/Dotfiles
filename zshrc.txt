@@ -1,0 +1,141 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/riacataquian/.oh-my-zsh
+
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+
+#ZSH_THEME="af-magic"
+# ZSH_THEME="cloud"
+# ZSH_THEME="awesomepanda"
+# ZSH_THEME="clean"
+# ZSH_THEME="crunch"
+# ZSH_THEME="edvardm"
+# ZSH_THEME="gallois"
+# ZSH_THEME="gozilla"
+ZSH_THEME="jbergantine"
+# ZSH_THEME="mh"
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+#
+# # Uncomment the following line to disable auto-setting terminal title.
+# # DISABLE_AUTO_TITLE="true"
+#
+# # Uncomment the following line to enable command auto-correction.
+# # ENABLE_CORRECTION="true"
+#
+# # Uncomment the following line to display red dots whilst waiting for completion.
+# # COMPLETION_WAITING_DOTS="true"
+#
+# # Uncomment the following line if you want to disable marking untracked files
+# # under VCS as dirty. This makes repository status check for large repositories
+# # much, much faster.
+# # DISABLE_UNTRACKED_FILES_DIRTY="true"
+#
+# # Uncomment the following line if you want to change the command execution time
+# # stamp shown in the history command output.
+# # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# # HIST_STAMPS="mm/dd/yyyy"
+#
+# # Would you like to use another custom folder than $ZSH/custom?
+# # ZSH_CUSTOM=/path/to/new-custom-folder
+#
+# # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# # Example format: plugins=(rails git textmate ruby lighthouse)
+# # Add wisely, as too many plugins slow down shell startup.
+plugins=(git)
+#
+# # User configuration
+#
+# export PATH="/Users/duday/.rvm/gems/ruby-2.2.0/bin:/Users/duday/.rvm/gems/ruby-2.2.0@global/bin:/Users/duday/.rvm/rubies/ruby-2.2.0/bin:/Users/duday/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# # export MANPATH="/usr/local/man:$MANPATH"
+#
+source $ZSH/oh-my-zsh.sh
+#
+# # You may need to manually set your language environment
+# # export LANG=en_US.UTF-8
+#
+# # Preferred editor for local and remote sessions
+# # if [[ -n $SSH_CONNECTION ]]; then
+# #   export EDITOR='vim'
+# # else
+# #   export EDITOR='mvim'
+# # fi
+
+# # Compilation flags
+# # export ARCHFLAGS="-arch x86_64"
+#
+# # ssh
+# # export SSH_KEY_PATH="~/.ssh/dsa_id"
+#
+# # Set personal aliases, overriding those provided by oh-my-zsh libs,
+# # plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# # users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# # For a full list of active aliases, run `alias`.
+# #
+# # Example aliases
+# # alias zshconfig="mate ~/.zshrc"
+# # alias ohmyzsh="mate ~/.oh-my-zsh"
+# #
+# . ~/.nvm/nvm.sh
+
+. $HOME/.asdf/asdf.sh
+#
+alias chuchu="sl"
+#
+# Elixir
+alias phs="iex -S mix phoenix.server"
+alias phx="iex -S mix phx.server"
+alias iem="iex -S mix"
+
+alias tn="telnet 54.169.227.90 6000"
+
+# AlchemistsPH
+alias alchemist_ph="cd ~/Elixir/apps/alchemist_ph"
+alias alchemist_ph-run="cd ~/Elixir/apps/alchemist_ph && iex -S mix phoenix.server"
+
+# Slerp
+alias slerp="cd ~/Elixir/apps/slerp"
+alias slerp-run="cd ~/Elixir/apps/slerp && iex -S mix phoenix.server"
+
+# Enterprise
+alias enterprise="cd ~/Elixir/apps/la-enterprise"
+alias enterprise-run="cd ~/Elixir/apps/la-enterprise && iex -S mix phoenix.server"
+
+# Quickpage
+alias qp="cd ~/Sites/quickpage"
+alias qp-run="cd ~/Sites/quickpage && meteor run --settings settings-development.json"
+alias qp-run-ios="cd ~/Sites/quickpage && meteor run ios --settings settings-development.json"
+
+# GradeKings
+alias gradekings="cd ~/Elixir/apps/gradekings"
+alias gradekings-run="cd ~/Elixir/apps/gradekings && iex -S mix phoenix.server"
+
+# Slack-IRC
+alias slack-irc="cd ~/Elixir/apps/slack-irc && npm start -- --config config.json"
+#
+# Emacs
+alias e="emacs"
+alias et="emacsclient -t"
+alias src="source ~/.zshrc"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
