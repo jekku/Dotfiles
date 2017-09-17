@@ -358,6 +358,7 @@ you should place your code here."
   (add-to-list 'auto-mode-alist '("\\.json" . json-mode))
   (add-to-list 'auto-mode-alist '("\\.md" . markdown-mode))
   (add-to-list 'auto-mode-alist '("\\.jsx" . jsx-mode))
+  (add-to-list 'auto-mode-alist '("\\.js" . react-mode))
 
   (add-to-list 'default-frame-alist '(background-color . "#000"))
   (set-face-attribute 'region nil :background "#000")
@@ -381,3 +382,16 @@ you should place your code here."
 ) ;; END user-config
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:background nil))))
+ '(flycheck-error ((t (:background "red" :foreground "white" :underline t :weight bold)))))
